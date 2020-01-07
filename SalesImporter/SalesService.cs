@@ -88,6 +88,7 @@ namespace SalesImporter
                 processedFilesDir = ConfigurationManager.AppSettings["processedFilesDir"].ToString(),
                 ignoredFilesDir = ConfigurationManager.AppSettings["ignoredFilesDir"].ToString(),
                 logDir = ConfigurationManager.AppSettings["logDir"].ToString(),
+                disableLogger = Convert.ToBoolean(ConfigurationManager.AppSettings["disableLogger"]),
 
                 extentionFile = ConfigurationManager.AppSettings["extentionFile"].ToString(),
                 processedExtentionFile = ConfigurationManager.AppSettings["processedExtentionFile"].ToString(),
@@ -118,6 +119,7 @@ namespace SalesImporter
             try
             {
                 LoggerService.logDir = Path.Combine(_fileImporterConfiguration.baseDir, _fileImporterConfiguration.logDir);
+                LoggerService.disableLogger = _fileImporterConfiguration.disableLogger;
                 LoggerService.ConfigureLogDirectory();
             }
             catch (Exception ex)

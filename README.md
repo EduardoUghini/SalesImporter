@@ -32,6 +32,7 @@ Após estes passos o serviço ficará rodando e lendo constantemente o diretóri
 ( Caso o mesmo esteja vazio o sistema utiliza a variável de ambiente HOMEDRIVE + HOMEPATH )
 
 - logDir: Diretório onde ficam os arquivos de Log. Criado dentro do diretório base
+- disableLogger: Desabilitar / Habilitar arquivo de log padrão false (log habilitado)
 
 - inputDir: Onde os arquivos ".dat" devem ser jogados para serem processados
 - outputDir: Onde os relatórios pós processamento são gerados

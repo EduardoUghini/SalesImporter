@@ -12,6 +12,7 @@ namespace FileImporter.Model
         public string processedFilesDir { get; set; }
         public string ignoredFilesDir { get; set; }
         public string logDir { get; set; }
+        public bool disableLogger { get; set; }
 
         public string extentionFile { get; set; }
         public string processedExtentionFile { get; set; }
